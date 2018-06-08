@@ -12,13 +12,13 @@
 <center>
 
 	<div class="hesder">
-		<h2> Login </h2>
+		<h2> Admin Login </h2>
 		<img src="img/ck.png" class="ck"/>
 		</div>
 		
 
 		
-	<form method="post" action="login.php">
+	<form method="post" action="adminlogin.php">
 	
 	 <?php include('errors.php'); ?>
 				
@@ -33,16 +33,10 @@
 		</div>
 		
 		<div class="input-group">
-			<button type="submit" name="loginbtn" class="btn"> <b> Login </b> </button>
+			<button type="submit" name="loginbtn" class="btn"> <a href="admin.php"> <b> Login </b> </a> </button>
 		</div>
-	
-        	<p>
-		Newly User? <a href="register.php"> Register </a>
-		</p>
 		
-			<p>
-		Admin Login <a href="adminlogin.php"> here </a>
-		</p>
+       
 	
 	
 	</form>

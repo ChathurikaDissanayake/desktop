@@ -1,11 +1,9 @@
+<?php if (count($errors) > 0): ?>
 
-<?php
-include 'db_server.php';
+    <div class="error">
+        <?php foreach ($errors as $error): ?>
+        <p><?php echo $error; ?></p>
+        <?php endforeach ?>
+    </div>
 
-$conn = OpenCon();
-
-echo "Connected Successfully";
-
-CloseCon($conn);
-
-?>
+<?php endif ?>

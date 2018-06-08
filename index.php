@@ -1,9 +1,12 @@
 <?php include('server.php'); 
 
 //user is not login,they can not access the page
-if(empty($_SESSION['username'])) {
-	header('location:login.php');
-}
+//if(empty($_SESSION['username'])) {
+//	header('location:login.php');
+//}
+
+$sql1="select * from users";
+$result=mysqli_query($db, $sql1);
 
 ?>
 
@@ -11,13 +14,13 @@ if(empty($_SESSION['username'])) {
 <html>
 <head>
 	<title> User Registation System </title>
-	<link rel="stylesheet" href = "index/style.css">
+	<link rel="stylesheet" href="style.css">
 	
 </head>
 <body style="background-color:pink">
 <center>
 
-	<div class="hesder">
+	<div class="header">
 		<h2> Home Page </h2>
 		<img src="img/ck.png" class="ck"/>
 		</div>
@@ -35,8 +38,12 @@ if(empty($_SESSION['username'])) {
 				</div>
 				
 			
-			<?php if (isset($_SESSION['username']));  ?>
+			<?php if (isset($_SESSION["username"]));  ?>
 				<p> WELCOME <strong><?php echo $_SESSION['username']; ?> </strong> </p>
+            
+            
+    
+            
 				<p> <a href="index.php?logout='1'" style="color:red;"> Logout </a> </p>
 			
 		</div>

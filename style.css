@@ -1,18 +1,15 @@
-*{
-	margin:10px;
-	padding:10px;
-	
-}
+
 .ck{
-	width:10px;
-	height:10px
+	width:200px;
+	height:200px
+}
 body{
 	font-size:120%;
-	background:#F6CEE3;
+	background:#a94442;
 
 }
 .header{
-	width:30px;
+	width:750px;
 	margin:50px auto 0px;
 	color:white;
 	background:#8181F7;
@@ -22,11 +19,11 @@ body{
 	padding:20px;
 }
 form, .content{
-	width:30px;
+	width:750px;
 	margin:50px auto;
 	padding:20px;
 	border: 1px solid #2E2EFE;
-	background:white;
+	background:#F6CEEE;
 	border-radius:0px 0px 10px 10px;
 	
 }
@@ -40,7 +37,7 @@ form, .content{
 }
 .input-group input{
 	height:30px;
-	width:93px;
+	width:250px;
 	padding:5px 10px;
 	font-size:16px;
 	border-radius:5px;
@@ -48,12 +45,11 @@ form, .content{
 	
 }
 .error{
-	width:92px;
 	margin:0px auto;
 	color:#a94442;
 	border:1px solid #a94442;
-	background:#8181F7;
-	text-align:left;
+	background:bisque;
+	text-align:center;
 	border-radius: 5px;
 	padding:10px;
 }
